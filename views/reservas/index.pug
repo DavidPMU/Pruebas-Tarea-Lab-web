@@ -1,0 +1,20 @@
+extends ../layout
+
+block content 
+    h1 Listado de reservas
+    table.table 
+        thead  
+            tr 
+                th Desde
+                th Hasta
+                th ID 
+        tbody 
+            
+            each reserva in reservas
+                tr
+                each reserva in reservas
+                    td=reserva.desde
+                    td=reserva.hasta
+                    td=reserva.bicicleta
+
+    a(href='/') Home
